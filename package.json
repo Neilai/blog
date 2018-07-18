@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node": "nodemon -w server --exec \"babel-node server --presets env\"",
-    "model":"babel-node ./server/models --presets env"
+    "model":"babel-node ./server/models --presets env",
+    "build": "babel server -d build"
   },
   "keywords": [],
   "author": "",

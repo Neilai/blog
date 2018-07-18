@@ -9,8 +9,7 @@ import {secret} from '../config'
 thenifyAll(jwt, {}, ['verify'])
 
 export default async function (ctx, next) {
-    const auth = ctx.get('Authorization')
-    const token = auth.split(' ')[1]
+    const token = ctx.get('Authorization')
     try {
         await jwt.verify(token, secret)
     }
