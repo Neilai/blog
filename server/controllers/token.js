@@ -11,14 +11,11 @@ import {
 class TokenControllers {
 
     async createToken(ctx) {
-
         const {
             username,
             password
         } = ctx.request.body
-
-
-        console.log(ctx.request);
+        console.log("username",username);
         const res = (await User.findUser(username))[0]
         if (res) {
             if (password === res.password) {

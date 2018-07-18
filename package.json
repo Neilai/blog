@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "node": "nodemon -w server --exec \"babel-node server --preseets env\""
+    "node": "nodemon -w server --exec \"babel-node server --presets env\"",
+    "model":"babel-node ./server/models --presets env"
   },
   "keywords": [],
   "author": "",

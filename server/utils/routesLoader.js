@@ -14,6 +14,7 @@ export default function (dirname) {
                     const router = require(file)
                     routers.push(router)
                 })
+                console.log(routers);
                 resolve(routers)
             }
         )

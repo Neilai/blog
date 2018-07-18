@@ -16,8 +16,7 @@ const app = new Koa()
 
 onerror(app)
 
-app
-    .use(cors({
+app.use(cors({
         maxAge: 7 * 24 * 60 * 60,
         credentials: true,
         methods: 'GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE',

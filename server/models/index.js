@@ -7,7 +7,7 @@ import fs from 'fs'
 import path from 'path'
 import {db} from '../config/index'
 
-const sqlSource = fs.readFileSync('../utils/blogdb.sql', 'utf-8')
+const sqlSource = fs.readFileSync('./blogdb.sql', 'utf-8')
 const init = mysql.createConnection(db)
 init.connect()
 init.query(sqlSource)
